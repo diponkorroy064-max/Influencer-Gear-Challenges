@@ -100,6 +100,7 @@ body {
     max-width: 90%;
     margin: 0 auto;
     margin-top: 140px;
+    margin-bottom: 100px;
 }
 
 .card-container h2{
@@ -138,8 +139,73 @@ body {
     font-weight: bold;
 }
 
+/* Featured section related styles */
+.featured-container{
+    background-color: aqua;
+    display: flex;
+    gap: 96px;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
 
+.freatured-img {
+    display: flex;
+    align-items: center;
+}
 
+.featured-container .featured-txt h2{
+    font-size: 38px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    color: #0A0826;
+}
 
+.featured-container .featured-txt p {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    color: #6C6C6C;
+}
 
+.featured-container .featured-txt button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(224, 44, 109, 1);
+    color: #FFFFFF;
+    padding: 10px 24px;
+    border-style: none;
+}
+
+/* Footer section related styles */
+.footer-container{
+    background-color: rgba(10, 8, 38, 1);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-container h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-container p {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.612);
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 17px;
+}
+
+.common-icon i{
+    color: #FFFFFF;
+}
 
