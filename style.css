@@ -17,13 +17,15 @@ body {
 .header-container {
     max-width: 90%;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 36px;
+    margin-bottom: 36px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-container .header-logo {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     color: #3A3A3A;
 }
@@ -45,6 +47,30 @@ body {
     color: #15c44a;
 }
 
+/* small-header-container related styles */
+.small-header-container {
+    display: none;
+}
+
+.small-nav-list ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-nav-list ul li {
+    list-style-type: none;
+}
+
+.small-nav-list ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.small-nav-list ul h5 {
+    font-size: 16px;
+    color: black;
+}
+
 
 /* Hero section related styles */
 .hero-container {
@@ -53,17 +79,15 @@ body {
     align-items: center;
     max-width: 90%;
     margin: 0 auto;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    /* background-color: #15c44a;  */
+    padding: 40px 0;
+    margin-bottom: 50px;
 }
 
 .hero-bg-img {
-    background-image: url("images/Circle\ design.svg");
-    background-position: center;
-}
-
-.hero-img img {
-    max-width: 400px;
+    background-image: url("images/Group\ 33091.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .hero-txt h2 {
@@ -93,12 +117,12 @@ body {
 
 .hero-txt button:hover {
     background-color: #FFFFFF;
-    color: #E02C6D ;
+    color: #E02C6D;
     cursor: pointer;
     border: 0.4px solid rgba(0, 0, 0, 0.404);
 }
 
-.hero-txt button i{
+.hero-txt button i {
     font-size: 10px;
 }
 
@@ -123,15 +147,15 @@ body {
 .card-container {
     max-width: 90%;
     margin: 0 auto;
-    margin-top: 140px;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
 .card-container h2 {
     text-align: center;
-    padding-bottom: 45px;
-    font-size: 30px;
-    font-weight: 600;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .card-section {
@@ -163,13 +187,14 @@ body {
     font-weight: bold;
 }
 
-.common-card i{
+.common-card i {
     color: orange;
 }
 
 /* Featured section related styles */
 .featured-container {
     display: flex;
+    justify-content: space-between;
     gap: 96px;
     align-items: center;
     max-width: 90%;
@@ -177,10 +202,9 @@ body {
     margin-bottom: 100px;
 }
 
-.freatured-img {
-    display: flex;
-    align-items: center;
-}
+/* .featured-img img{
+    width: 100%;
+} */
 
 .featured-container .featured-txt h2 {
     font-size: 38px;
@@ -211,14 +235,16 @@ body {
     border: 0.4px solid rgba(0, 0, 0, 0.411);
 }
 
-.featured-txt button i{
- font-size: 10px;
+.featured-txt button i {
+    font-size: 10px;
 }
 
 
 /* Footer section related styles */
 .footer-container {
     background-color: rgba(10, 8, 38, 1);
+    max-width: 100%;
+    margin: 0 auto;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -245,4 +271,56 @@ body {
 
 .common-icon i {
     color: #FFFFFF;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* responsive related styles */
+
+/* responsive for (max-width:576px) */
+@media screen and (max-width: 576px) {
+    .header-container {
+        display: none;
+    }
+
+    .small-header-container {
+        display: block;
+        max-width: 85%;
+        margin: 50px auto 30px;
+    }
+
+    .featured-container,
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-txt {
+        margin-bottom: 25px;
+    }
+
+    /* .featured-txt{
+        max-width: 90%;
+    } */
+
+    .featured-container .featured-txt h2 {
+        font-size: 26px;
+    }
+
+    .card-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .common-card img {
+        width: 100%;
+    }
+
+    .sponcer-brands {
+        flex-wrap: wrap;
+    }
+
+
 }
